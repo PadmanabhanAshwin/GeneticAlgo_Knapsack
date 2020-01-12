@@ -1,4 +1,5 @@
 #%% Main file run. 
+
 #Importing py packages and "func.py"
 import csv
 import pickle
@@ -12,6 +13,7 @@ import importlib
 import plotly.express as px
 import pandas as pd
 from scipy import stats
+#importlib to update func realtime
 importlib.reload(func)
 
 #%%#
