@@ -156,7 +156,28 @@ at each of the crossover-mutation rate combinations.
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![]![Number of Fitness Calls](/images/lMC_balance_knapPI_11_100_1000.png)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png)
+![Number of Fitness Calls](/images/MC_balance_knapPI_11_100_1000.png)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png)
+
+\centering    
+\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000.png}}
+\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000_avgfitness.png}}
+\centering    
+\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_functioncalls.png}}
+\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_avgfitness2.png}}
+\centering    
+\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000.png}}
+\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000_fitness.png}}
+\centering    
+\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_functioncalls_4.png}}
+\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_fitness.png}}
+\centering    
+\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000.png}}
+\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000_fitness.png}}
+\centering    
+\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_3.png}}
+\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_fitness.png}}
+
+
 
 Comparing the contour plots, it appears that a cross-over probability of
 0.85 and a mutation probability of 0.000018 seems to not only produce
