@@ -190,39 +190,6 @@ Fifth Instance: Number of fitness calls       | Fifth Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_16_50_1000_3.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_16_50_1000_fitness.png" width="250" height="250">
 
-
-
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000_avgfitness.png}}
-
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_functioncalls.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_avgfitness2.png}}
-
-
-
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000_fitness.png}}
-
-
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_functioncalls_4.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_fitness.png}}
-
-
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000_fitness.png}}
-
-
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_3.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_fitness.png}}
-
-
-
 Comparing the contour plots, it appears that a cross-over probability of
 0.85 and a mutation probability of 0.000018 seems to not only produce
 less number of function calls but provides a decent average optimal
@@ -231,11 +198,10 @@ solution.
 Comparison to Random Sampling: 
 ===============================
 
-**Compare the performance of the "best" parameters from part (a) to a
+**Comparing the performance of the "best" parameters from part (a) to a
 random sampling approach for different population sizes, ensuring a fair
 comparison (equal total number of fitness function calls).**
 
-\vspace{2mm}
 I have scripted my program is such a way that the number of function
 calls decides the population size for the Random Sampling (RS). The best
 solution of the RS data was compared with the resulting best solution of
@@ -246,13 +212,20 @@ line graph and the box plot below. The number of fitness calls made at
 each run ranged from 250-400, which represents the population of the
 randomly sampled data at those runs.
 
-\centering    
-\subfigure[For instance KnapPI14\_50\_1000]{\label{fig:MCB}\includegraphics[width=80mm]{images/GAvRSknap14_50_1000.png}}
-\subfigure[For instance KnapPI13\_50\_1000 calls]{\label{fig:MCB}\includegraphics[width=80mm]{images/ga_rs_maxfitness_instance1.png}}
-\centering    
-\subfigure[For instance KnapPI14\_50\_1000]{\label{fig:MCB}\includegraphics[width=80mm]{images/GAvRS_Box_knap14_50_1000.png}}
-\subfigure[For instance KnapPI13\_50\_1000 calls]{\label{fig:MCB}\includegraphics[width=80mm]{images/GAvRS_knap_13_50_100.png}}
-\newpage
+Tracking maximum fitness: 
+
+Instance KnapPI14\_50\_1000       | Instance KnapPI13\_50\_1000
+:-------------------------:|:-------------------------:
+<img src="/images/GAvRSknap14_50_1000.png" width="250" height="250"> |  <img src="/images/ga_rs_maxfitness_instance1.png" width="250" height="250">
+
+
+Distribution of function calls:
+
+Instance KnapPI14\_50\_1000       | Instance KnapPI13\_50\_1000
+:-------------------------:|:-------------------------:
+<img src="/images/GAvRS_Box_knap14_50_1000.png" width="250" height="250"> |  <img src="/images/GAvRS_knap_13_50_100.png" width="250" height="250">
+
+
 New mutation method:
 ====================
 
@@ -280,6 +253,8 @@ methods.
 \centering
 ![[]{label=""}](images/comparemutation_functioncalls.png){width="85%"}
 
-\centering    
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/M1_M2_Maxfitness.png}}
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/M1_M2_Functioncall.png}}
+Comparative box-whisker plot to juxtapose the two mutation methods: Clearly the second method is better.  
+
+Method 1     | Method 2
+:-------------------------:|:-------------------------:
+<img src="/images/M1_M2_Maxfitness.png" width="250" height="250"> |  <img src="/images/M1_M2_Functioncall.png" width="250" height="250">
