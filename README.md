@@ -1,13 +1,8 @@
----
-author:
-- Ashwin Padmanabhan
-date: 'September 29, 2019'
-title: |
-    Exploring GA Techniques and Parameters for Solving Hardest 1-0 Knapsack
-    Instances
+#Exploring Genetic Algorithm Techniques and Parameters for Solving Hardest 1-0 Knapsack Instances
+###Ashwin Padmanabhan
+####September 2019
 ---
 
-\maketitle
 The section below \"Logic Review\" is a brief explanation of the logic
 and assumptions used to implement the GA.
 
