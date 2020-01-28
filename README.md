@@ -118,7 +118,7 @@ population constant.
 
 Whenever a child is produced, mutation is done at every location of the
 genotype with an equal probability as entered by the mutation rate. For
-example, for a mutation rate of 10<sup>-5}</sup> every bit (position) of the
+example, for a mutation rate of 10<sup>-5</sup> every bit (position) of the
 genotype is mutated equal Bernoulli success rate of 10<sup>-5</sup>. For
 the third problem statement, mutation does not take place every time a child is created.
 It takes place with a probability given by the mutation rate (around
@@ -257,3 +257,13 @@ Comparative box-whisker plot to juxtapose the two mutation methods: Clearly the 
 Method 1     | Method 2
 :-------------------------:|:-------------------------:
 <img src="/images/M1_M2_Maxfitness.png" width="250" height="250"> |  <img src="/images/M1_M2_Functioncall.png" width="250" height="250">
+
+Some bookkeeping notes: 
+====================
+
+*knapPI_X_Y_Z.csv --> Raw instance file. 
+*\(first/second/third/fourth/fifth/sixth\)instance.csv --> Cleaned instance files. 
+*instance_information_readme --> Statistical comments on instances. 
+*main.py --> main file. 
+*func.py --> function file. 
+*Plots --> Folder with result plots. 
