@@ -156,9 +156,7 @@ at each of the crossover-mutation rate combinations.
 
 First Instance: Number of fitness calls             | First Instance: Average Fitness
 :-------------------------:|:-------------------------:
-![Number of Fitness Calls](/images/MC_balance_knapPI_11_100_1000.png =250x250)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png =250x250)
-
-
+<img src="/images/MC_balance_knapPI_11_100_1000.png" width="100" height="100"> |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png =250x250)
 
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000.png}}
