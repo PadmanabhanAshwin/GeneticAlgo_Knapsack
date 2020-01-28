@@ -156,7 +156,7 @@ at each of the crossover-mutation rate combinations.
 
 First Instance: Number of fitness calls             | First Instance: Average Fitness
 :-------------------------:|:-------------------------:
-![Number of Fitness Calls](/images/MC_balance_knapPI_11_100_1000.png = 250x250)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png = 250x250)
+![Number of Fitness Calls](/images/MC_balance_knapPI_11_100_1000.png= 250x250)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png= 250x250)
 
 
 
