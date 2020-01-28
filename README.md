@@ -167,21 +167,25 @@ Second Instance: Number of fitness calls       | Second Instance: Average Fitnes
 <img src="/images/MC_balance_knapPI_13_50_1000_functioncalls.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_13_50_1000_avgfitness2.png" width="250" height="250">
 
 Contour plots for the third instance shown below: 
+
 Third Instance: Number of fitness calls       | Third Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_13_200_1000.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_13_200_1000_fitness.png" width="250" height="250">
 
 Contour plots for the fourth instance shown below: 
+
 Fourth Instance: Number of fitness calls       | Fourth Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_14_50_1000_functioncalls_4.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_14_50_1000_fitness.png" width="250" height="250">
 
 Contour plots for the fifth instance shown below: 
+
 Fifth Instance: Number of fitness calls       | Fifth Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_15_50_1000.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_15_50_1000_fitness.png" width="250" height="250">
 
 Contour plots for the sixth instance shown below: 
+
 Fifth Instance: Number of fitness calls       | Fifth Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_16_50_1000_3.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_16_50_1000_fitness.png" width="250" height="250">
