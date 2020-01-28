@@ -154,13 +154,38 @@ GA is run for given set of repetitions (5 here, fig. 4 being an
 exception, which was run twice) to calculate the average fitness value
 at each of the crossover-mutation rate combinations.
 
+Contour plots for the first instance shown below: 
+
 First Instance: Number of fitness calls|First Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_11_100_1000.png" width="250" height="250"> | <img src="/images/MC_balance_knapPI_11_100_1000.png" width="250" height="250">
 
+Contour plots for the second instance shown below: 
+
 Second Instance: Number of fitness calls       | Second Instance: Average Fitness
 :-------------------------:|:-------------------------:
 <img src="/images/MC_balance_knapPI_13_50_1000_functioncalls.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_13_50_1000_avgfitness2.png" width="250" height="250">
+
+Contour plots for the third instance shown below: 
+Third Instance: Number of fitness calls       | Third Instance: Average Fitness
+:-------------------------:|:-------------------------:
+<img src="/images/MC_balance_knapPI_13_200_1000.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_13_200_1000_fitness.png" width="250" height="250">
+
+Contour plots for the fourth instance shown below: 
+Fourth Instance: Number of fitness calls       | Fourth Instance: Average Fitness
+:-------------------------:|:-------------------------:
+<img src="/images/MC_balance_knapPI_14_50_1000_functioncalls_4.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_14_50_1000_fitness.png" width="250" height="250">
+
+Contour plots for the fifth instance shown below: 
+Fifth Instance: Number of fitness calls       | Fifth Instance: Average Fitness
+:-------------------------:|:-------------------------:
+<img src="/images/MC_balance_knapPI_15_50_1000.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_15_50_1000_fitness.png" width="250" height="250">
+
+Contour plots for the sixth instance shown below: 
+Fifth Instance: Number of fitness calls       | Fifth Instance: Average Fitness
+:-------------------------:|:-------------------------:
+<img src="/images/MC_balance_knapPI_16_50_1000_3.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_16_50_1000_fitness.png" width="250" height="250">
+
 
 
 \centering    
@@ -176,12 +201,18 @@ Second Instance: Number of fitness calls       | Second Instance: Average Fitnes
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000_fitness.png}}
+
+
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_functioncalls_4.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_fitness.png}}
+
+
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000_fitness.png}}
+
+
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_3.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_fitness.png}}
