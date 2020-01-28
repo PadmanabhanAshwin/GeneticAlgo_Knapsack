@@ -1,6 +1,6 @@
-#Exploring Genetic Algorithm Techniques and Parameters for Solving Hardest 1-0 Knapsack Instances
-###Ashwin Padmanabhan
-####September 2019
+# Exploring Genetic Algorithm Techniques and Parameters for Solving Hardest 1-0 Knapsack Instances
+### Ashwin Padmanabhan
+#### September 2019
 ---
 
 The section below \"Logic Review\" is a brief explanation of the logic
