@@ -154,7 +154,7 @@ GA is run for given set of repetitions (5 here, fig. 4 being an
 exception, which was run twice) to calculate the average fitness value
 at each of the crossover-mutation rate combinations.
 
-Solarized dark             |  Solarized Ocean
+First Instance: Number of fitness calls             | First Instance: Average Fitness
 :-------------------------:|:-------------------------:
 ![Number of Fitness Calls](/images/MC_balance_knapPI_11_100_1000.png)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png)
 
