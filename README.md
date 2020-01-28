@@ -156,14 +156,23 @@ at each of the crossover-mutation rate combinations.
 
 First Instance: Number of fitness calls             | First Instance: Average Fitness
 :-------------------------:|:-------------------------:
-<img src="/images/MC_balance_knapPI_11_100_1000.png" width="100" height="100"> |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png =250x250)
+<img src="/images/MC_balance_knapPI_11_100_1000.png" width="200" height="200"> |  <img src="/images/MC_balance_knapPI_11_100_1000.png" width="200" height="200">
+
+Second Instance: Number of fitness calls       | Second Instance: Average Fitness
+:-------------------------:|:-------------------------:
+<img src="/images/MC_balance_knapPI_13_50_1000_functioncalls.png" width="200" height="200"> |  <img src="/images/MC_balance_knapPI_13_50_1000_avgfitness2.png" width="200" height="200">
+
 
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000_avgfitness.png}}
+
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_functioncalls.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_avgfitness2.png}}
+
+
+
 \centering    
 \subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000.png}}
 \subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000_fitness.png}}
