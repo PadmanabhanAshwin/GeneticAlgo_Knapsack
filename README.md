@@ -250,8 +250,7 @@ method of mutation over the previous one.
 The diagram below shows the distribution of function calls for the two
 methods.
 
-\centering
-![[]{label=""}](images/comparemutation_functioncalls.png){width="85%"}
+![[]{label=""}](images/comparemutation_functioncalls.png)
 
 Comparative box-whisker plot to juxtapose the two mutation methods: Clearly the second method is better.  
 
