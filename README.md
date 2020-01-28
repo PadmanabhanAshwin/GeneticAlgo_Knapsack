@@ -154,13 +154,13 @@ GA is run for given set of repetitions (5 here, fig. 4 being an
 exception, which was run twice) to calculate the average fitness value
 at each of the crossover-mutation rate combinations.
 
-First Instance: Number of fitness calls             | First Instance: Average Fitness
+First Instance: Number of fitness calls|First Instance: Average Fitness
 :-------------------------:|:-------------------------:
-<img src="/images/MC_balance_knapPI_11_100_1000.png" width="200" height="200"> |  <img src="/images/MC_balance_knapPI_11_100_1000.png" width="200" height="200">
+<img src="/images/MC_balance_knapPI_11_100_1000.png" width="250" height="250"> | <img src="/images/MC_balance_knapPI_11_100_1000.png" width="250" height="250">
 
 Second Instance: Number of fitness calls       | Second Instance: Average Fitness
 :-------------------------:|:-------------------------:
-<img src="/images/MC_balance_knapPI_13_50_1000_functioncalls.png" width="200" height="200"> |  <img src="/images/MC_balance_knapPI_13_50_1000_avgfitness2.png" width="200" height="200">
+<img src="/images/MC_balance_knapPI_13_50_1000_functioncalls.png" width="250" height="250"> |  <img src="/images/MC_balance_knapPI_13_50_1000_avgfitness2.png" width="250" height="250">
 
 
 \centering    
