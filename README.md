@@ -17,7 +17,7 @@ Overall Run Parameters:
     is/is not added in the Knapsack.
 
 -   **Initial Population**: Start with 40 valid individuals chosen
-    randomly. (Section 1.2)
+    randomly. (Ref. section titled "Initialize population")
 
 -   **Progeny progression**: Two parents produce two children.
 
@@ -46,19 +46,17 @@ Initialize Population:
 #### 
 
 Initial population selection is done using random Bernoulli sampling.
-**initializepopulation()** returns, \"initialpopulation\", a (Initial
-population Size x len(genotype)) sized list. Population is initialized
+**initializepopulation()** returns, \"initialpopulation\", a \ [Initial_population_size x len(genotype))\] sized list. Population is initialized
 using a Bernoulli trial value on each position of the genotype,
-\"initial population size\" number of times. Within the loop (line 5),
-line 8 checks if the genotype produced satisfies the capacity constraint
+\"initial population size\" number of times. Within the loop we check if the genotype produced satisfies the capacity constraint
 of the Knapsack and is appended into the population only if it does.
-This is the constraint handling used here. Individuals (children,
+This is the constraint handling mechanism used here. Individuals (children,
 mostly) are checked on whether they satisfy the Knapsack capacity
 constraint and are added to the population only if they do. The
 probability of the Bernoulli success is manually set to 0.01 using a
 trial-error approach, since this produces best reasonable initial
 individuals to get us started given the object weight and knapsack
-capacity (especially for instance 2).
+capacity (especially for instance 2). Obviously, these parameters have to be set *a priori*, based-of on instance knowledge. 
 
 Selection:
 ----------
@@ -79,23 +77,22 @@ Selection:
 A tournament selection is implemented here. Line 5 above produces two
 random indices between **\[0,len(population))** and a tournament takes
 place to select the parent with a higher fitness value which then goes
-on to be one of the parent.
+on to be one of the parent. This applies a gently pressure towards the "Survival of the Fittest" Paradigm, whilst not 
+engineering the solution too much, which might negatively affect the exploration of the search space. 
 
 Recombination and Mutation:
 ---------------------------
 
-    #Recombination and Mutation. 
-            for i in range(len(parentpair)):
-                children = []
-                generatecrossoverflag= bernoulli.rvs(crossoverrate, size = 1)
-                if generatecrossoverflag ==1:
-                    children= [np.concatenate((parentpair[i][0][0:crossoverpoint],parentpair[i][1][crossoverpoint:int(instanceinfo[2])]), axis =0),
+    for i in range(len(parentpair)):
+         children = []
+         generatecrossoverflag= bernoulli.rvs(crossoverrate, size = 1)
+         if generatecrossoverflag ==1:
+            children= [np.concatenate((parentpair[i][0][0:crossoverpoint],parentpair[i][1][crossoverpoint:int(instanceinfo[2])]), axis =0),
                                     np.concatenate((parentpair[i][1][0:crossoverpoint], parentpair[i][0][crossoverpoint: int(instanceinfo[2])]), axis = 0)]
-                else: 
-                    children = [parentpair[i][0], parentpair[i][1]]
-                #Mutation:
-                children=mutate(children, mutationrate)
-                for j in range(len(children)):
+          else: 
+            	children = [parentpair[i][0], parentpair[i][1]]
+                	children=mutate(children, mutationrate)
+                	for j in range(len(children)):
                     isfeasible = isFeasibleSolution(children[j], weights, knapsackcapacity)
                     if ((isfeasible) and listcompare(population, children[j])):
                         population.append(children[j])
@@ -104,8 +101,7 @@ Recombination and Mutation:
                         population.pop(presentindex)
                         population1.pop(presentindex)
 
-A mutation and crossover probability (or rate) is user assigned at the
-beginning of the run. Crossover does a 1-pt crossover to produce the
+A mutation and crossover probability (or rate) is *a priori* assigned. Crossover does a 1-pt crossover to produce the
 genotype of the child. Once crossover is done, Mutation flips the value
 of a genotype position to it's compliment. Also please note that
 (following line 12) once children has been created they are appended
@@ -122,9 +118,9 @@ population constant.
 
 Whenever a child is produced, mutation is done at every location of the
 genotype with an equal probability as entered by the mutation rate. For
-example, for a mutation rate of $10^{-5}$ every bit (position) of the
-genotype is mutated equal Bernoulli success rate of $10^{-5}$. For
-question 3, mutation does not take place every time a child is created.
+example, for a mutation rate of 10<sup>-5}</sup> every bit (position) of the
+genotype is mutated equal Bernoulli success rate of 10<sup>-5</sup>. For
+the third problem statement, mutation does not take place every time a child is created.
 It takes place with a probability given by the mutation rate (around
 0.1), and whenever mutation is to be done, a random location from the
 genotype is sampled and inverted. The code above calls the fitness
@@ -158,24 +154,10 @@ GA is run for given set of repetitions (5 here, fig. 4 being an
 exception, which was run twice) to calculate the average fitness value
 at each of the crossover-mutation rate combinations.
 
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_11_100_1000_avgfitness.png}}
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_functioncalls.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_50_1000_avgfitness2.png}}
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_13_200_1000_fitness.png}}
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_functioncalls_4.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_14_50_1000_fitness.png}}
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_15_50_1000_fitness.png}}
-\centering    
-\subfigure[Number of fitness function calls]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_3.png}}
-\subfigure[Average Fitness]{\label{fig:MCB}\includegraphics[width=60mm]{images/MC_balance_knapPI_16_50_1000_fitness.png}}
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![]![Number of Fitness Calls](/images/lMC_balance_knapPI_11_100_1000.png)  |  ![Average Fitness](/images/MC_balance_knapPI_11_100_1000_avgfitness.png)
+
 Comparing the contour plots, it appears that a cross-over probability of
 0.85 and a mutation probability of 0.000018 seems to not only produce
 less number of function calls but provides a decent average optimal
