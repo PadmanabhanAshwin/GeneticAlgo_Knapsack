@@ -139,11 +139,14 @@ for the instance in file, knapPI\_13\_50\_1000.csv, running for 500
 generations. Other evolution plots in submitted folder under \"Evolution
 Plots\".
 
+<<<<<<< HEAD
 Optimal Evolution|Average Fitness of the Population
 :-------------------------:|:-------------------------:
 <img src="/images/OptimalEvolution_knap13_50_1000.png" width="250" height="250"> | <img src="/images/AverageEvol_knap13_50_1000.png" width="250" height="250">
 
 
+=======
+>>>>>>> bd1729ffdce2cf76018e6e957b2c8657c3a8c3c5
 Impact of Mutation and Crossover:
 =================================
 
